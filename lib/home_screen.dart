@@ -7,30 +7,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'SHOP',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-              letterSpacing: 2.0,
-            ),
-          ),
-          centerTitle: false,
-          backgroundColor: Colors.white,
-          actions: [
-            Container(
-              height: 50,
-              margin: const EdgeInsets.only(right: 16.0),
-              child: IconButton(
-                onPressed: () {
-                  // เพิ่มฟังก์ชันที่ต้องการเมื่อกดปุ่ม
-                },
-                icon: const Icon(Icons.person_outline),
-              ),
-            ),
-          ],
-        ),
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -68,7 +44,7 @@ class HomeScreen extends StatelessWidget {
               ),
 
               // เพิ่มอีกหนึ่งแถวแบบเดิม (อาจใส่ SizedBox เพื่อเว้นระยะห่างก็ได้)
-              
+
               Container(
                 width: double.infinity,
                 height: 50,
